@@ -27,16 +27,16 @@ https://leetcode.com/problems/binary-search (Easy)
 
 ## Week 2 (5/28)
 
-### 1. [Linked List Cycle]()
+### 1. [Linked List Cycle](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/linked-list-cycle.py) (Easy)
 
-### 2. [Middle of Linked List]()
+### 2. [Middle of Linked List](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/middle-of-linked-list.py) (Easy)
 
-### 3. [Merge Two Sorted Linkec List]()
+### 3. [Merge Two Sorted Linkec List](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/merge-two-sorted-lists.py) (Easy)
 
-### 4. [First Bad version]()
+### 4. [First Bad version](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/first-bad-version.py) (Easy)
 
-### 5. [Move Zeroes]()
+### 5. [Move Zeroes](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/move-zeroes.py) (Easy)
 
-### 6. [Two Sum II]()
+### 6. [Two Sum II](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/two-sum-2.py) (Medium)
 
-### 7. [Three Sum]()
+### 7. [Three Sum](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/3sum.py) (Medium)
