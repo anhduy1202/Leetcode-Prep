@@ -33,7 +33,7 @@ https://leetcode.com/problems/linked-list-cycle/ (Easy)
 ### 2. [Middle of Linked List](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/middle-of-linked-list.py) 
 https://leetcode.com/problems/middle-of-the-linked-list/ (Easy)
 
-### 3. [Merge Two Sorted Linkec List](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/merge-two-sorted-lists.py) 
+### 3. [Merge Two Sorted Linked List](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/merge-two-sorted-lists.py) 
 https://leetcode.com/problems/merge-two-sorted-lists/ (Easy)
 
 ### 4. [First Bad version](https://github.com/anhduy1202/Summer-Leetcode/blob/master/Week%202/first-bad-version.py) 
