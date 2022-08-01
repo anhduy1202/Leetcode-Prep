@@ -33,11 +33,14 @@ def maxSumSizeKUnique(arr, k):
             continue
         elif (windowEnd - windowStart) + 1 == k:
             maxSum = max(maxSum, currSum)
+            currSum -= arr[windowStart]
+            windowStart += 1
 
     if maxSum == 0:
         return -1
     return maxSum
 
+print(maxSumSizeKUnique([2,1,2,3,4,2],2))
 print(maxSumSizeKUnique([1,2,3,4,4,3,2,1],3)) # 9
 print(maxSumSizeKUnique([1,2,2,1,3,4],4)) # 10
 print(maxSumSizeKUnique([1,1],5)) # -1
