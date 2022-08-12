@@ -26,6 +26,22 @@ def connect(root):
                 q.append(node.right)
     return root
 
+def connectCircular(root):
+    if not root:
+        return []
+    q = deque([root])
+    prevNode = None
+    while q:
+        node = q.popleft()
+        if prevNode:
+            prevNode.next = node
+        prevNode = node
+        if node.left:
+            q.append(node.left)
+        if node.right:
+            q.append(node.right)
+    return root
+
 
 Node4 = TreeNode(val=4)
 Node5 = TreeNode(val=5)
@@ -34,4 +50,4 @@ Node7 = TreeNode(val=7)
 Node2 = TreeNode(val=2,left=Node4,right=Node5)
 Node3 = TreeNode(val=3,left=Node6,right=Node7)
 root = TreeNode(val=1, left=Node2, right=Node3)
-print(connect(root))
+print(connectCircular(root))

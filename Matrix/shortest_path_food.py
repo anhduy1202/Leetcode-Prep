@@ -7,19 +7,20 @@ def getFood(grid):
     def bfs(r, c,steps):
         q = deque()
         q.append((r,c,0))
+        directions = [(0,1),(0,-1),(1,0),(-1,0)]
         while q:
             r,c,steps = q.popleft()
-            if r < 0 or c < 0 or r >= rows or c >= cols:
-                continue
-            if grid[r][c] == "X" or visited[r][c]:
-                continue
-            if grid[r][c] == "#":
-                return steps
-            visited[r][c] = True
-            q.extend([(r+1,c,steps+1)])
-            q.extend([(r-1,c,steps+1)])
-            q.extend([(r,c+1,steps+1)])
-            q.extend([(r,c-1,steps+1)])
+            for ro,co in directions:
+                dr = r + ro
+                dc = c + co
+                if dr < 0 or dc < 0 or dr >= rows or dc >= cols:
+                    continue
+                if grid[dr][dc] == "X" or visited[dr][dc]:
+                    continue
+                if grid[dr][dc] == "#":
+                    return steps+1
+                visited[dr][dc] = True
+                q.append((dr,dc,steps+1))
 
     for r in range(rows):
         for c in range(cols):
@@ -29,4 +30,4 @@ def getFood(grid):
 
 
 
-print(getFood( [["X","X","X","X","X"],["X","*","X","O","X"],["X","O","X","#","X"],["X","X","X","X","X"]]))
+print(getFood([["X","X","X","X","X","X"],["X","*","O","O","O","X"],["X","O","O","#","O","X"],["X","X","X","X","X","X"]]))
